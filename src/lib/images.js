@@ -1,0 +1,17 @@
+export const IMAGES = {
+  logo: "https://media.base44.com/images/public/user_69edb7452f0beef803a1b6d7/6722a706c_PPClogo.png",
+  heroHome: "https://media.base44.com/images/public/69fbd3333276b34737a75439/bcc141a47_generated_image.png",
+  heroResidential: "https://media.base44.com/images/public/69fbd3333276b34737a75439/057915701_generated_image.png",
+  heroCommercial: "https://media.base44.com/images/public/69fbd3333276b34737a75439/af0b32873_generated_image.png",
+  heroStorm: "https://media.base44.com/images/public/69fbd3333276b34737a75439/23d1f2af3_generated_image.png",
+  heroRepair: "https://media.base44.com/images/public/69fbd3333276b34737a75439/600f785ad_generated_image.png",
+  heroGutters: "https://media.base44.com/images/public/69fbd3333276b34737a75439/6c80b7953_generated_image.png",
+  heroSiding: "https://media.base44.com/images/public/69fbd3333276b34737a75439/7b028589b_generated_image.png",
+  shingleDetail: "https://media.base44.com/images/public/69fbd3333276b34737a75439/9573b3566_generated_image.png",
+  aerialResidential: "https://media.base44.com/images/public/69fbd3333276b34737a75439/0cb4807ff_generated_image.png",
+  inspectorBlueprint: "https://images.unsplash.com/photo-1726589004565-bedfba94d3a2?auto=format&fit=crop&w=2200&q=80",
+  beforeAfterRoof: "https://media.base44.com/images/public/69fbd3333276b34737a75439/b46528b18_generated_image.png",
+  installationCrew: "https://media.base44.com/images/public/69fbd3333276b34737a75439/1848858ed_generated_image.png",
+  commercialTPO: "https://media.base44.com/images/public/69fbd3333276b34737a75439/2b8c808a1_generated_image.png",
+  stormRestoration: "https://media.base44.com/images/public/69fbd3333276b34737a75439/2a55cddc0_generated_image.png",
+};

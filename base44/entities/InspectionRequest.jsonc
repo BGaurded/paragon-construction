@@ -1,0 +1,56 @@
+{
+  "name": "InspectionRequest",
+  "type": "object",
+  "properties": {
+    "full_name": {
+      "type": "string",
+      "description": "Full name of the person requesting inspection"
+    },
+    "phone": {
+      "type": "string",
+      "description": "Phone number"
+    },
+    "email": {
+      "type": "string",
+      "format": "email",
+      "description": "Email address"
+    },
+    "zip_code": {
+      "type": "string",
+      "description": "Zip code of the property"
+    },
+    "service_type": {
+      "type": "string",
+      "enum": [
+        "Residential Roof",
+        "Commercial Roof",
+        "Repair",
+        "Storm Damage",
+        "Consultation"
+      ],
+      "description": "Type of service requested"
+    },
+    "message": {
+      "type": "string",
+      "description": "Optional message from the requestor"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "new",
+        "contacted",
+        "scheduled",
+        "completed"
+      ],
+      "default": "new",
+      "description": "Status of the inspection request"
+    }
+  },
+  "required": [
+    "full_name",
+    "phone",
+    "email",
+    "zip_code",
+    "service_type"
+  ]
+}
