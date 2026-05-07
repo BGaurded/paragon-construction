@@ -75,7 +75,7 @@ export default function HeroSection() {
   };
 
   return (
-    <section ref={sectionRef} className="relative min-h-screen flex items-center justify-center overflow-hidden" data-reveal>
+    <section ref={sectionRef} className="relative min-h-screen flex items-center justify-center overflow-hidden">
       <div
         ref={bgRef}
         data-parallax

@@ -21,14 +21,9 @@ export default function AnimationProvider({ children }) {
         ScrollTrigger.config({ autoRefreshEvents: "visibilitychange,DOMContentLoaded,load,resize" });
         ScrollTrigger.defaults({ start: "top 82%", once: true });
 
-        gsap.fromTo(
-          pageRef.current,
-          { autoAlpha: 0, y: 8 },
-          { autoAlpha: 1, y: 0, duration: 0.32, ease: "power2.inOut" }
-        );
-
         const singles = gsap.utils.toArray("[data-reveal]", pageRef.current);
         singles.forEach((el) => {
+          if (el.closest("[data-no-reveal]")) return;
           gsap.fromTo(
             el,
             { y: isTouch ? 28 : 44 },
@@ -50,6 +45,7 @@ export default function AnimationProvider({ children }) {
 
         const groups = gsap.utils.toArray("[data-reveal-group]", pageRef.current);
         groups.forEach((group) => {
+          if (group.closest("[data-no-reveal]")) return;
           const items = group.querySelectorAll("[data-reveal-item]");
           if (!items.length) return;
           gsap.fromTo(
