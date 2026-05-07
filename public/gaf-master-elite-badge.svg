@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 56" role="img" aria-labelledby="gafTitle">
-  <title id="gafTitle">GAF Master Elite Certified</title>
+  <title id="gafTitle">GAF Certified</title>
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0" stop-color="#1a4d6b"/>
@@ -8,5 +8,5 @@
   </defs>
   <rect width="200" height="56" rx="6" fill="url(#bg)" stroke="#C9A961" stroke-width="1.5"/>
   <text x="100" y="24" fill="#ffffff" font-family="Georgia, 'Times New Roman', serif" font-size="17" font-weight="700" text-anchor="middle">GAF</text>
-  <text x="100" y="44" fill="#C9A961" font-family="system-ui, Arial, sans-serif" font-size="9" font-weight="600" text-anchor="middle" letter-spacing="0.12em">MASTER ELITE® CERTIFIED</text>
+  <text x="100" y="44" fill="#C9A961" font-family="system-ui, Arial, sans-serif" font-size="9" font-weight="600" text-anchor="middle" letter-spacing="0.12em">CERTIFIED</text>
 </svg>

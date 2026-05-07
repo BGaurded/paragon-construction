@@ -4,7 +4,7 @@ import { SITE } from "@/lib/siteConfig";
 const HEIGHT_CLASS = { sm: "h-7", md: "h-9", lg: "h-11" };
 
 /**
- * Replace /public/gaf-master-elite-badge.svg with the official asset from the GAF Partner Portal when available.
+ * Inline GAF badge to avoid path/load issues across environments.
  */
 export default function GafMasterEliteBadge({ size = "md", className = "" }) {
   const hClass = HEIGHT_CLASS[size] || HEIGHT_CLASS.md;
@@ -50,7 +50,7 @@ export default function GafMasterEliteBadge({ size = "md", className = "" }) {
           textAnchor="middle"
           letterSpacing="0.12em"
         >
-          MASTER ELITE(R) CERTIFIED
+          CERTIFIED
         </text>
       </svg>
     </a>
