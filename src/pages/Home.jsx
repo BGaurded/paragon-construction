@@ -14,7 +14,7 @@ export default function Home() {
     <div className="min-h-screen">
       <PageSEO
         title="Paragon Partners Construction | Premium Roofing in Spring, The Woodlands, Conroe, Cypress & Sugar Land TX"
-        description="Premium residential & commercial roofing across the Greater Houston area. GAF Master Elite certified, licensed & insured. Spring, The Woodlands, Conroe, Cypress, Sugar Land, and beyond. Schedule your free inspection."
+        description="Premium residential & commercial roofing across the Greater Houston area. GAF Certified, licensed & insured. Spring, The Woodlands, Conroe, Cypress, Sugar Land, and beyond. Schedule your free inspection."
         path="/"
         jsonLd={localBusinessSchema()}
       />

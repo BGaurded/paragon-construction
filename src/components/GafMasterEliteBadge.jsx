@@ -14,12 +14,12 @@ export default function GafMasterEliteBadge({ size = "md", className = "" }) {
       target="_blank"
       rel="noopener noreferrer"
       className={`inline-flex shrink-0 rounded-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#C9A961] ${className}`}
-      aria-label="GAF Master Elite certification — opens GAF.com in a new tab"
+      aria-label="GAF Certified certification — opens GAF.com in a new tab"
     >
       <svg
         viewBox="0 0 200 56"
         role="img"
-        aria-label="GAF Master Elite Certified"
+        aria-label="GAF Certified"
         className={`${hClass} w-auto`}
       >
         <defs>

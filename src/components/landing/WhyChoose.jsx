@@ -11,7 +11,7 @@ const TRUST_ITEMS = [
   },
   {
     icon: Award,
-    title: "GAF Master Elite Certified",
+    title: "GAF Certified",
     description: "Part of an elite group of contractors trusted by North America's largest roofing manufacturer.",
     gafBadge: true,
   },

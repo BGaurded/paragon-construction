@@ -35,7 +35,7 @@ export default function Footer() {
               homes and businesses.
             </p>
             <div className="flex flex-wrap items-center gap-2 mb-4">
-              <span className="text-xs font-mono tracking-wider uppercase text-white/40">GAF Master Elite®</span>
+              <span className="text-xs font-mono tracking-wider uppercase text-white/40">GAF Certified</span>
               <GafMasterEliteBadge size="sm" />
             </div>
             <div className="flex gap-3">
@@ -123,7 +123,8 @@ export default function Footer() {
                 <span className="text-sm text-white/50 font-body">
                   {SITE.address.streetAddress}
                   <br />
-                  {SITE.address.addressLocality}, {SITE.address.addressRegion} {SITE.address.postalCode}
+                  {SITE.address.addressLocality}, {SITE.address.addressRegion}{" "}
+                  <span className="font-heading tracking-[0.02em] text-white/70">{SITE.address.postalCode}</span>
                 </span>
               </li>
             </ul>
@@ -138,7 +139,7 @@ export default function Footer() {
             <span className="text-xs text-white/30 font-mono tracking-wider uppercase">Licensed & Insured</span>
             <span className="w-px h-3 bg-white/10 hidden sm:block" aria-hidden />
             <div className="flex items-center gap-2">
-              <span className="text-xs text-white/30 font-mono tracking-wider uppercase">GAF Master Elite Certified</span>
+              <span className="text-xs text-white/30 font-mono tracking-wider uppercase">GAF Certified</span>
               <GafMasterEliteBadge size="sm" />
             </div>
           </div>

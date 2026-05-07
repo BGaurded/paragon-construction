@@ -8,7 +8,7 @@ import GoldenThread from "@/components/landing/GoldenThread";
 import PageSEO, { localBusinessSchema } from "@/components/PageSEO";
 import { LeadFormFields } from "@/components/landing/LeadFormFields";
 import { validateInspectionFields, submitInspectionRequest } from "@/lib/inspectionForm";
-import { SITE, formatAddressLines } from "@/lib/siteConfig";
+import { SITE } from "@/lib/siteConfig";
 import GafMasterEliteBadge from "@/components/GafMasterEliteBadge";
 import { CheckCircle2 } from "lucide-react";
 
@@ -57,8 +57,6 @@ export default function Contact() {
     }
   };
 
-  const [line1, line2] = formatAddressLines();
-
   return (
     <div className="min-h-screen bg-white">
       <PageSEO
@@ -82,7 +80,7 @@ export default function Contact() {
               area, including Spring, The Woodlands, Conroe, Cypress, Sugar Land, and surrounding communities.
             </p>
             <div className="flex flex-wrap items-center justify-center gap-3 mt-8 text-white/90 text-sm font-body">
-              <span className="font-mono uppercase tracking-wider text-[#C9A961]/90">GAF Master Elite®</span>
+              <span className="font-mono uppercase tracking-wider text-[#C9A961]/90">GAF Certified</span>
               <GafMasterEliteBadge size="sm" />
             </div>
           </motion.div>
@@ -102,32 +100,33 @@ export default function Contact() {
                 <h2 className="font-heading text-2xl font-light text-[#2B2D2F] mb-6">Contact information</h2>
                 <ul className="space-y-6">
                   <li className="flex gap-4">
-                    <Phone className="w-5 h-5 text-[#C9A961] shrink-0 mt-0.5" aria-hidden />
+                    <Mail className="w-5 h-5 text-[#C9A961] shrink-0 mt-0.5" aria-hidden />
                     <div>
-                      <p className="text-xs font-mono uppercase tracking-wider text-[#2B2D2F]/50 mb-1">Phone</p>
+                      <p className="text-xs font-mono uppercase tracking-wider text-[#2B2D2F]/50 mb-1">Remington D&apos;Abbraccio</p>
                       <a
-                        href={`tel:${SITE.phoneTel}`}
-                        className="text-[#2B2D2F] font-medium hover:text-[#2F5F6F] transition-colors text-lg"
+                        href="mailto:remington@paragonpartnersconstrction.com"
+                        className="block text-[#2B2D2F] font-medium hover:text-[#2F5F6F] transition-colors break-all"
                       >
-                        {SITE.phoneDisplay}
+                        remington@paragonpartnersconstrction.com
+                      </a>
+                      <a href="tel:+18632146310" className="text-[#2B2D2F]/80 font-body text-sm hover:text-[#2F5F6F] transition-colors">
+                        863-214-6310
                       </a>
                     </div>
                   </li>
                   <li className="flex gap-4">
                     <Mail className="w-5 h-5 text-[#C9A961] shrink-0 mt-0.5" aria-hidden />
                     <div>
-                      <p className="text-xs font-mono uppercase tracking-wider text-[#2B2D2F]/50 mb-1">Email</p>
-                      <div className="flex flex-col gap-1.5">
-                        {SITE.emails.map((addr) => (
-                          <a
-                            key={addr}
-                            href={`mailto:${addr}`}
-                            className="text-[#2B2D2F] font-medium hover:text-[#2F5F6F] transition-colors break-all"
-                          >
-                            {addr}
-                          </a>
-                        ))}
-                      </div>
+                      <p className="text-xs font-mono uppercase tracking-wider text-[#2B2D2F]/50 mb-1">Brian Gonzalez</p>
+                      <a
+                        href="mailto:brian@ppcconstruction.com"
+                        className="block text-[#2B2D2F] font-medium hover:text-[#2F5F6F] transition-colors break-all"
+                      >
+                        brian@ppcconstruction.com
+                      </a>
+                      <a href="tel:+18322576336" className="text-[#2B2D2F]/80 font-body text-sm hover:text-[#2F5F6F] transition-colors">
+                        832-257-6336
+                      </a>
                     </div>
                   </li>
                   <li className="flex gap-4">
@@ -142,13 +141,24 @@ export default function Contact() {
                     </div>
                   </li>
                   <li className="flex gap-4">
+                    <Phone className="w-5 h-5 text-[#C9A961] shrink-0 mt-0.5" aria-hidden />
+                    <div>
+                      <p className="text-xs font-mono uppercase tracking-wider text-[#2B2D2F]/50 mb-1">Office Number</p>
+                      <a
+                        href={`tel:${SITE.phoneTel}`}
+                        className="text-[#2B2D2F] font-medium hover:text-[#2F5F6F] transition-colors"
+                      >
+                        {SITE.phoneDisplay}
+                      </a>
+                    </div>
+                  </li>
+                  <li className="flex gap-4">
                     <MapPin className="w-5 h-5 text-[#C9A961] shrink-0 mt-0.5" aria-hidden />
                     <div>
-                      <p className="text-xs font-mono uppercase tracking-wider text-[#2B2D2F]/50 mb-1">Office</p>
+                      <p className="text-xs font-mono uppercase tracking-wider text-[#2B2D2F]/50 mb-1">Address</p>
                       <p className="text-[#2B2D2F]/80 font-body text-sm leading-relaxed">
-                        {line1}
-                        <br />
-                        {line2}
+                        25420 Kuykendahl Rd, Ste B100, Tomball, TX{" "}
+                        <span className="font-heading tracking-[0.02em] text-[#2B2D2F]">77375</span>
                       </p>
                     </div>
                   </li>

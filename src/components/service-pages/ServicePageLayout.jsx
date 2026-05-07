@@ -195,9 +195,8 @@ export default function ServicePageLayout({ config }) {
 
 function FAQItem({ faq, index }) {
   const [open, setOpen] = useState(false);
-  const qMentionsGaf =
-    /GAF Master Elite|GAF Certified/i.test(faq.question) || /GAF Master Elite/i.test(faq.answer);
-  const aMentionsGaf = /GAF Master Elite|GAF Certified/i.test(faq.answer);
+  const qMentionsGaf = /GAF Certified/i.test(faq.question) || /GAF Certified/i.test(faq.answer);
+  const aMentionsGaf = /GAF Certified/i.test(faq.answer);
 
   return (
     <motion.div

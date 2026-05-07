@@ -44,7 +44,7 @@ const AREAS = [
     city: "Greater Houston Area",
     state: null,
     description:
-      "Wherever you are around the metro, we bring the same GAF Master Elite standards, responsive service, and insurance-claim experience to every project.",
+      "Wherever you are around the metro, we bring the same GAF Certified standards, responsive service, and insurance-claim experience to every project.",
   },
 ];
 

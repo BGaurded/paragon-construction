@@ -41,7 +41,7 @@ const VALUES = [
 ];
 
 const DIFFERENTIATORS = [
-  { text: "GAF Master Elite Certified — top 3% of roofing contractors nationwide", gaf: true },
+  { text: "GAF Certified contractor with manufacturer-backed quality standards", gaf: true },
   { text: "Fully licensed and insured for your protection" },
   { text: "Premium materials only—no shortcuts, no substitutions" },
   { text: "Lifetime workmanship warranty on qualifying installations" },
@@ -78,7 +78,7 @@ export default function About() {
     <div className="min-h-screen bg-white">
       <PageSEO
         title="About Paragon Partners | Houston's Trusted Roofing Experts"
-        description="Premium residential & commercial roofing across Greater Houston—Spring, The Woodlands, Conroe, Cypress & Sugar Land. GAF Master Elite certified, licensed & insured. Integrity & craftsmanship."
+        description="Premium residential & commercial roofing across Greater Houston—Spring, The Woodlands, Conroe, Cypress & Sugar Land. GAF Certified, licensed & insured. Integrity & craftsmanship."
         path="/about"
         jsonLd={localBusinessSchema()}
       />
@@ -205,13 +205,13 @@ export default function About() {
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="text-center mb-12">
             <p className="font-mono text-xs tracking-[0.3em] text-[#C9A961] uppercase mb-4">The Paragon Standard</p>
             <h2 className="font-heading text-3xl sm:text-4xl font-light text-white tracking-wide mb-4 flex flex-wrap items-center justify-center gap-3">
-              <span>GAF Master Elite® Certified Contractor</span>
+              <span>GAF Certified Contractor</span>
               <GafMasterEliteBadge size="md" />
             </h2>
             <p className="text-white/86 font-body leading-relaxed max-w-2xl mx-auto [text-shadow:0_2px_14px_rgba(0,0,0,0.48)]">
-              Paragon Partners Construction is proud to be a GAF Master Elite® certified contractor — the highest contractor
-              certification awarded by GAF, North America&apos;s largest roofing manufacturer. This designation reflects our
-              commitment to training, quality, and warranty options that protect your investment.
+              Paragon Partners Construction is proud to be a GAF Certified contractor recognized by North America&apos;s
+              largest roofing manufacturer. This designation reflects our commitment to training, quality, and warranty
+              options that protect your investment.
             </p>
             <a
               href={SITE.gafUrl}
