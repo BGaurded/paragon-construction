@@ -27,46 +27,52 @@ export default function AnimationProvider({ children }) {
           { autoAlpha: 1, y: 0, duration: 0.32, ease: "power2.inOut" }
         );
 
-        const singles = gsap.utils.toArray("[data-reveal]");
+        const singles = gsap.utils.toArray("[data-reveal]", pageRef.current);
         singles.forEach((el) => {
           gsap.fromTo(
             el,
-            { autoAlpha: 0, y: isTouch ? 28 : 44 },
+            { y: isTouch ? 28 : 44 },
             {
-              autoAlpha: 1,
               y: 0,
               duration: isTouch ? 0.62 : 0.78,
               ease: "power3.out",
+              immediateRender: false,
+              clearProps: "transform",
               scrollTrigger: {
                 trigger: el,
                 start: isTouch ? "top 88%" : "top 82%",
+                once: true,
+                invalidateOnRefresh: true,
               },
             }
           );
         });
 
-        const groups = gsap.utils.toArray("[data-reveal-group]");
+        const groups = gsap.utils.toArray("[data-reveal-group]", pageRef.current);
         groups.forEach((group) => {
           const items = group.querySelectorAll("[data-reveal-item]");
           if (!items.length) return;
           gsap.fromTo(
             items,
-            { autoAlpha: 0, y: isTouch ? 24 : 40 },
+            { y: isTouch ? 24 : 40 },
             {
-              autoAlpha: 1,
               y: 0,
               duration: isTouch ? 0.58 : 0.76,
               ease: "power3.out",
               stagger: isTouch ? 0.08 : 0.12,
+              immediateRender: false,
+              clearProps: "transform",
               scrollTrigger: {
                 trigger: group,
                 start: isTouch ? "top 88%" : "top 82%",
+                once: true,
+                invalidateOnRefresh: true,
               },
             }
           );
         });
 
-        const parallaxTargets = gsap.utils.toArray("[data-parallax]");
+        const parallaxTargets = gsap.utils.toArray("[data-parallax]", pageRef.current);
         parallaxTargets.forEach((el) => {
           gsap.to(el, {
             yPercent: isTouch ? 5 : 9,
