@@ -5,7 +5,6 @@ import ServicesGrid from "../components/landing/ServicesGrid";
 import WhyChoose from "../components/landing/WhyChoose";
 import LeadCaptureForm from "../components/landing/LeadCaptureForm";
 import ServiceAreas from "../components/landing/ServiceAreas";
-import Testimonials from "../components/landing/Testimonials";
 import Footer from "../components/landing/Footer";
 import GoldenThread from "../components/landing/GoldenThread";
 import PageSEO, { localBusinessSchema } from "@/components/PageSEO";
@@ -26,7 +25,6 @@ export default function Home() {
       <WhyChoose />
       <LeadCaptureForm />
       <ServiceAreas />
-      <Testimonials />
       <Footer />
     </div>
   );

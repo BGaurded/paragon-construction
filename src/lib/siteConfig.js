@@ -6,7 +6,7 @@ export const SITE = {
   },
   phoneDisplay: "(281) 659-4129",
   phoneTel: "+12816594129",
-  email: "info@paragonpartners.com",
+  emails: ["brian@ppconstruction.com", "remington@paragonpartnersconstruction.com"],
   address: {
     streetAddress: "25420 Kuykendahl Rd. Ste B100",
     addressLocality: "Tomball",

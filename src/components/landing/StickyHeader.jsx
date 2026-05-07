@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Phone, Menu, X, ChevronDown } from "lucide-react";
+import { Phone, Menu, X, ChevronDown, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { motion, AnimatePresence } from "framer-motion";
 import { Link, useLocation } from "react-router-dom";
@@ -94,32 +94,42 @@ export default function StickyHeader() {
                 >
                   <button
                     type="button"
-                  className="nav-link flex items-center gap-1 text-sm font-body font-medium text-white/80 hover:text-[#C9A961] transition-colors duration-300 tracking-[0.14em] uppercase"
+                    onClick={() => setServicesOpen((p) => !p)}
+                    className={`nav-link flex items-center gap-2 text-sm font-body font-semibold transition-colors duration-300 tracking-[0.14em] uppercase ${
+                      servicesOpen ? "text-[#C9A961]" : "text-white/85 hover:text-[#C9A961]"
+                    }`}
                     aria-expanded={servicesOpen}
                     aria-haspopup="true"
                     aria-controls="services-menu"
                   >
                     {link.label}
-                    <ChevronDown className={`w-3 h-3 transition-transform duration-200 ${servicesOpen ? "rotate-180" : ""}`} aria-hidden />
+                    <ChevronDown className={`w-4 h-4 transition-transform duration-300 ${servicesOpen ? "rotate-180" : ""}`} aria-hidden />
                   </button>
                   <AnimatePresence>
                     {servicesOpen && (
                       <motion.div
                         id="services-menu"
                         role="menu"
-                        initial={{ opacity: 0, y: 8 }}
+                        initial={{ opacity: 0, y: 10, scale: 0.98 }}
                         animate={{ opacity: 1, y: 0 }}
-                        exit={{ opacity: 0, y: 8 }}
-                        className="absolute top-full left-1/2 -translate-x-1/2 mt-3 w-60 bg-[#1f2528]/97 border border-white/10 rounded-lg shadow-[0_26px_42px_rgba(10,15,18,0.58)] z-50 overflow-hidden"
+                        exit={{ opacity: 0, y: 10, scale: 0.98 }}
+                        transition={{ duration: 0.24, ease: "easeOut" }}
+                        className="absolute top-full left-1/2 -translate-x-1/2 mt-3 w-[20.5rem] bg-[#0f171c]/98 border border-[#C9A961]/25 rounded-xl shadow-[0_30px_60px_rgba(4,9,12,0.66)] z-50 overflow-hidden backdrop-blur-md"
                       >
+                        <div className="px-5 py-3 border-b border-[#C9A961]/20 bg-gradient-to-r from-[#2F5F6F]/22 to-[#1a2329]/20">
+                          <p className="text-[11px] font-mono uppercase tracking-[0.2em] text-[#C9A961]">
+                            Roofing Services
+                          </p>
+                        </div>
                         {SERVICES_DROPDOWN.map((s) => (
                           <Link
                             key={s.href}
                             role="menuitem"
                             to={s.href}
-                            className="block px-5 py-3 text-sm text-white/70 hover:text-[#C9A961] hover:bg-white/[0.07] transition-colors duration-200 border-b border-white/5 last:border-0 focus-visible:outline focus-visible:outline-2 focus-visible:outline-inset focus-visible:outline-[#C9A961]"
+                            className="flex items-center justify-between gap-3 px-5 py-3.5 text-[15px] font-medium text-white/92 hover:text-[#C9A961] hover:bg-[#2F5F6F]/22 transition-colors duration-200 border-b border-white/10 last:border-0 focus-visible:outline focus-visible:outline-2 focus-visible:outline-inset focus-visible:outline-[#C9A961]"
                           >
-                            {s.label}
+                            <span>{s.label}</span>
+                            <ArrowRight className="w-4 h-4 text-[#C9A961]/70" aria-hidden />
                           </Link>
                         ))}
                       </motion.div>
@@ -204,16 +214,17 @@ export default function StickyHeader() {
                       initial={{ height: 0, opacity: 0 }}
                       animate={{ height: "auto", opacity: 1 }}
                       exit={{ height: 0, opacity: 0 }}
-                      className="overflow-hidden pl-4 border-l border-[#C9A961]/30"
+                      className="overflow-hidden pl-4 border-l border-[#C9A961]/30 bg-[#11191e]/45 rounded-r-md mt-1"
                     >
                       {SERVICES_DROPDOWN.map((s) => (
                         <Link
                           data-mobile-item
                           key={s.href}
                           to={s.href}
-                          className="block py-2 text-lg text-white/70 hover:text-[#C9A961] transition-colors font-body focus-visible:outline focus-visible:outline-2 focus-visible:outline-[#C9A961] rounded-sm"
+                          className="flex items-center justify-between py-2.5 pr-2 text-[1.1rem] text-white/90 hover:text-[#C9A961] transition-colors font-body focus-visible:outline focus-visible:outline-2 focus-visible:outline-[#C9A961] rounded-sm"
                         >
-                          {s.label}
+                          <span>{s.label}</span>
+                          <ArrowRight className="w-4 h-4 text-[#C9A961]/70" aria-hidden />
                         </Link>
                       ))}
                     </motion.div>

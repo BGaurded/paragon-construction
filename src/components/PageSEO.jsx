@@ -51,7 +51,7 @@ export function localBusinessSchema() {
     image: `${SITE.url}/gaf-master-elite-badge.svg`,
     url: SITE.url,
     telephone: SITE.phoneTel,
-    email: SITE.email,
+    email: SITE.emails,
     priceRange: "$$$",
     address: {
       "@type": "PostalAddress",

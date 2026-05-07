@@ -17,7 +17,6 @@ const SERVICES_LINKS = [
 const COMPANY_LINKS = [
   { label: "About Us", href: "/about" },
   { label: "Service Areas", href: "/service-areas" },
-  { label: "Testimonials", href: "/#testimonials" },
   { label: "Contact", href: "/contact" },
   { label: "Warranty Information", href: "/about#warranty" },
 ];
@@ -99,12 +98,17 @@ export default function Footer() {
               </li>
               <li className="flex items-start gap-3">
                 <Mail className="w-4 h-4 text-[#C9A961] mt-0.5 shrink-0" aria-hidden />
-                <a
-                  href={`mailto:${SITE.email}`}
-                  className="text-sm text-white/50 hover:text-white transition-colors font-body focus-visible:outline focus-visible:outline-2 focus-visible:outline-[#C9A961] rounded-sm break-all"
-                >
-                  {SITE.email}
-                </a>
+                <div className="flex flex-col gap-1.5">
+                  {SITE.emails.map((addr) => (
+                    <a
+                      key={addr}
+                      href={`mailto:${addr}`}
+                      className="text-sm text-white/50 hover:text-white transition-colors font-body focus-visible:outline focus-visible:outline-2 focus-visible:outline-[#C9A961] rounded-sm break-all"
+                    >
+                      {addr}
+                    </a>
+                  ))}
+                </div>
               </li>
               <li className="flex items-start gap-3">
                 <Clock className="w-4 h-4 text-[#C9A961] mt-0.5 shrink-0" aria-hidden />

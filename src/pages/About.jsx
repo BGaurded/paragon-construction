@@ -266,11 +266,15 @@ export default function About() {
                   {SITE.phoneDisplay}
                 </a>
               </div>
-              <div className="flex items-center gap-3 text-[#2B2D2F]/70">
-                <Mail className="w-5 h-5 text-[#C9A961] shrink-0" aria-hidden />
-                <a href={`mailto:${SITE.email}`} className="font-body text-sm hover:text-[#2F5F6F] transition-colors">
-                  {SITE.email}
-                </a>
+              <div className="flex items-start gap-3 text-[#2B2D2F]/70">
+                <Mail className="w-5 h-5 text-[#C9A961] shrink-0 mt-0.5" aria-hidden />
+                <div className="flex flex-col gap-1 font-body text-sm">
+                  {SITE.emails.map((addr) => (
+                    <a key={addr} href={`mailto:${addr}`} className="hover:text-[#2F5F6F] transition-colors break-all">
+                      {addr}
+                    </a>
+                  ))}
+                </div>
               </div>
             </div>
             <Link to="/contact">

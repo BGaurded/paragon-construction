@@ -117,12 +117,17 @@ export default function Contact() {
                     <Mail className="w-5 h-5 text-[#C9A961] shrink-0 mt-0.5" aria-hidden />
                     <div>
                       <p className="text-xs font-mono uppercase tracking-wider text-[#2B2D2F]/50 mb-1">Email</p>
-                      <a
-                        href={`mailto:${SITE.email}`}
-                        className="text-[#2B2D2F] font-medium hover:text-[#2F5F6F] transition-colors break-all"
-                      >
-                        {SITE.email}
-                      </a>
+                      <div className="flex flex-col gap-1.5">
+                        {SITE.emails.map((addr) => (
+                          <a
+                            key={addr}
+                            href={`mailto:${addr}`}
+                            className="text-[#2B2D2F] font-medium hover:text-[#2F5F6F] transition-colors break-all"
+                          >
+                            {addr}
+                          </a>
+                        ))}
+                      </div>
                     </div>
                   </li>
                   <li className="flex gap-4">
