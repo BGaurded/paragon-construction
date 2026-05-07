@@ -115,7 +115,7 @@ export default function HeroSection() {
           ref={subheadingRef}
           className="mt-7 text-base sm:text-lg text-white font-body max-w-2xl mx-auto leading-relaxed [text-shadow:0_2px_16px_rgba(0,0,0,0.55)]"
         >
-          Serving Spring, The Woodlands, Conroe, Sugarland, Cypress, and the Greater Houston Area with premium
+          Serving Spring, The Woodlands, Conroe, Sugar Land, Cypress, and the Greater Houston Area with premium
           residential and commercial roofing solutions.
         </p>
 

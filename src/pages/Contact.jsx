@@ -63,7 +63,7 @@ export default function Contact() {
     <div className="min-h-screen bg-white">
       <PageSEO
         title="Contact Paragon Partners | Free Roof Inspection | Greater Houston TX"
-        description="Contact Paragon Partners Construction for a free roof inspection in Spring, The Woodlands, Tomball & Huntsville. Call (281) 659-4129 or send a message."
+        description="Contact Paragon Partners Construction for a free roof inspection across Greater Houston—Spring, The Woodlands, Conroe, Cypress & Sugar Land. Call (281) 659-4129 or send a message."
         path="/contact"
         jsonLd={localBusinessSchema()}
       />
@@ -78,8 +78,8 @@ export default function Contact() {
               Get In Touch With Paragon Partners
             </h1>
             <p className="text-white/88 font-body max-w-2xl mx-auto leading-relaxed [text-shadow:0_2px_14px_rgba(0,0,0,0.5)]">
-              Schedule your free inspection, ask a question, or request a call back. We serve Spring, The Woodlands,
-              Tomball, Huntsville, and surrounding Greater Houston communities.
+              Schedule your free inspection, ask a question, or request a call back. We serve the entire Greater Houston
+              area, including Spring, The Woodlands, Conroe, Cypress, Sugar Land, and surrounding communities.
             </p>
             <div className="flex flex-wrap items-center justify-center gap-3 mt-8 text-white/90 text-sm font-body">
               <span className="font-mono uppercase tracking-wider text-[#C9A961]/90">GAF Master Elite®</span>
@@ -156,8 +156,8 @@ export default function Contact() {
               </div>
               <div className="premium-card p-6">
                 <p className="text-sm text-[#2B2D2F]/70 font-body leading-relaxed mb-4">
-                  <strong className="text-[#2B2D2F]">Service area:</strong> Spring, The Woodlands, Tomball, Huntsville, and
-                  Greater Houston.
+                  <strong className="text-[#2B2D2F]">Service area:</strong> We serve all of the Greater Houston area,
+                  including Spring, The Woodlands, Conroe, Cypress, and Sugar Land.
                 </p>
                 <Link to="/service-areas" className="text-sm font-medium text-[#2F5F6F] hover:text-[#C9A961] transition-colors">
                   View all service areas →

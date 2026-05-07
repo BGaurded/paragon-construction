@@ -45,7 +45,7 @@ const DIFFERENTIATORS = [
   { text: "Fully licensed and insured for your protection" },
   { text: "Premium materials only—no shortcuts, no substitutions" },
   { text: "Lifetime workmanship warranty on qualifying installations" },
-  { text: "Deep Houston-area expertise across Spring, The Woodlands, Tomball & Huntsville" },
+  { text: "Deep Houston-area expertise across Spring, The Woodlands, Conroe, Cypress & Sugar Land" },
   { text: "24/7 emergency response when severe weather strikes" },
 ];
 
@@ -78,7 +78,7 @@ export default function About() {
     <div className="min-h-screen bg-white">
       <PageSEO
         title="About Paragon Partners | Houston's Trusted Roofing Experts"
-        description="Premium residential & commercial roofing in Spring, The Woodlands, Tomball & Huntsville. GAF Master Elite certified, licensed & insured. Integrity & craftsmanship."
+        description="Premium residential & commercial roofing across Greater Houston—Spring, The Woodlands, Conroe, Cypress & Sugar Land. GAF Master Elite certified, licensed & insured. Integrity & craftsmanship."
         path="/about"
         jsonLd={localBusinessSchema()}
       />
@@ -120,9 +120,9 @@ export default function About() {
                   quality that goes beyond industry standards.
                 </p>
                 <p>
-                  We built our reputation serving homeowners and businesses throughout Spring, The Woodlands, Tomball, and
-                  Huntsville—delivering refined workmanship, transparent communication, and roofs engineered for Texas
-                  weather.
+                  We built our reputation serving homeowners and businesses throughout Spring, The Woodlands, Conroe,
+                  Cypress, Sugar Land, and the Greater Houston area—delivering refined workmanship, transparent
+                  communication, and roofs engineered for Texas weather.
                 </p>
               </div>
             </motion.div>

@@ -13,8 +13,8 @@ export default function Home() {
   return (
     <div className="min-h-screen">
       <PageSEO
-        title="Paragon Partners Construction | Premium Roofing in Spring, The Woodlands, Tomball & Huntsville TX"
-        description="Premium residential & commercial roofing in Greater Houston. GAF Master Elite certified, licensed & insured. Spring, The Woodlands, Tomball & Huntsville. Schedule your free inspection."
+        title="Paragon Partners Construction | Premium Roofing in Spring, The Woodlands, Conroe, Cypress & Sugar Land TX"
+        description="Premium residential & commercial roofing across the Greater Houston area. GAF Master Elite certified, licensed & insured. Spring, The Woodlands, Conroe, Cypress, Sugar Land, and beyond. Schedule your free inspection."
         path="/"
         jsonLd={localBusinessSchema()}
       />

@@ -8,9 +8,9 @@ const config = {
   title: "Expert Roof Repair in Greater Houston",
   subtitle: "Fast, reliable repairs that diagnose root causes and extend your roof's life — not just quick patches.",
   seo: {
-    title: "Roof Repair Huntsville TX | Paragon Partners Construction",
+    title: "Roof Repair Greater Houston TX | Paragon Partners Construction",
     description:
-      "Expert leak detection & roof repairs serving Spring, The Woodlands, Tomball & Huntsville. Honest repair vs. replace guidance. Call for a free inspection.",
+      "Expert leak detection & roof repairs serving Spring, The Woodlands, Conroe, Cypress & Sugar Land. Honest repair vs. replace guidance. Call for a free inspection.",
     path: "/services/roof-repair",
   },
   intro: {

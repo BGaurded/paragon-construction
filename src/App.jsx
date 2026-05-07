@@ -5,6 +5,7 @@ import { queryClientInstance } from "@/lib/query-client";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import PageNotFound from "./lib/PageNotFound";
 import AnimationProvider from "@/components/animations/AnimationProvider";
+import ScrollToTop from "@/components/ScrollToTop";
 import Home from "./pages/Home";
 import ResidentialRoofing from "./pages/services/ResidentialRoofing";
 import CommercialRoofing from "./pages/services/CommercialRoofing";
@@ -39,6 +40,7 @@ function App() {
     <HelmetProvider>
       <QueryClientProvider client={queryClientInstance}>
         <Router>
+          <ScrollToTop />
           <AnimationProvider>
             <AppRoutes />
           </AnimationProvider>

@@ -10,7 +10,7 @@ const config = {
   seo: {
     title: "Gutter Installation Spring TX | Paragon Partners Construction",
     description:
-      "Seamless gutters & gutter guards for Spring, The Woodlands, Tomball & Huntsville. Custom on-site fabrication. Free gutter assessments.",
+      "Seamless gutters & gutter guards across Greater Houston—Spring, The Woodlands, Conroe, Cypress & Sugar Land. Custom on-site fabrication. Free gutter assessments.",
     path: "/services/gutter-systems",
   },
   intro: {

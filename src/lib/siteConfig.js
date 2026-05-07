@@ -14,7 +14,7 @@ export const SITE = {
     postalCode: "77375",
     addressCountry: "US",
   },
-  serviceCities: ["Spring", "The Woodlands", "Tomball", "Huntsville"],
+  serviceCities: ["Spring", "The Woodlands", "Conroe", "Cypress", "Sugar Land", "Houston"],
   gafUrl: "https://www.gaf.com",
 };
 

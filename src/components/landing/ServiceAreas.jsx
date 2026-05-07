@@ -6,8 +6,9 @@ import { Link } from "react-router-dom";
 const AREAS = [
   { city: "Spring", state: "TX", zip: "77373, 77379, 77380, 77381, 77382, 77383, 77386, 77388, 77389" },
   { city: "The Woodlands", state: "TX", zip: "77380, 77381, 77382, 77384, 77385, 77386, 77389" },
-  { city: "Tomball", state: "TX", zip: "77375, 77377" },
-  { city: "Huntsville", state: "TX", zip: "77320, 77340, 77341, 77342, 77343, 77344, 77348, 77349" },
+  { city: "Conroe", state: "TX", zip: "77301, 77302, 77303, 77304, 77305, 77384" },
+  { city: "Cypress", state: "TX", zip: "77429, 77433" },
+  { city: "Sugar Land", state: "TX", zip: "77478, 77479, 77498" },
 ];
 
 export default function ServiceAreas() {
@@ -27,12 +28,12 @@ export default function ServiceAreas() {
           </h2>
           <div className="w-16 h-px bg-[#C9A961] mx-auto mt-6 mb-8" />
           <p className="text-[#2B2D2F]/60 font-body max-w-2xl mx-auto leading-relaxed">
-            Paragon Partners Construction is your trusted roofing expert throughout the Greater Houston area, specializing
-            in premium residential and commercial roofing solutions.
+            Paragon Partners Construction serves the entire Greater Houston area—your trusted partner for premium
+            residential and commercial roofing across Spring, The Woodlands, Conroe, Cypress, Sugar Land, and beyond.
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6" data-reveal-group>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6" data-reveal-group>
           {AREAS.map((area, i) => (
             <motion.div
               key={area.city}

@@ -10,7 +10,7 @@ const config = {
   seo: {
     title: "Commercial Roofing The Woodlands TX | Paragon Partners Construction",
     description:
-      "Commercial flat roofing, TPO, EPDM & metal for Spring, The Woodlands, Tomball & Huntsville. Minimal disruption. Licensed & insured. Request a consultation.",
+      "Commercial flat roofing, TPO, EPDM & metal across Greater Houston—Spring, The Woodlands, Conroe, Cypress & Sugar Land. Minimal disruption. Licensed & insured. Request a consultation.",
     path: "/services/commercial-roofing",
   },
   intro: {

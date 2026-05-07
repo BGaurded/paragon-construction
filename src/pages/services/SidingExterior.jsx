@@ -10,7 +10,7 @@ const config = {
   seo: {
     title: "Siding & Exterior The Woodlands TX | Paragon Partners Construction",
     description:
-      "Premium siding, soffit & fascia in Spring, The Woodlands, Tomball & Huntsville. Fiber cement & vinyl. Storm repairs. Request a consultation.",
+      "Premium siding, soffit & fascia across Greater Houston—Spring, The Woodlands, Conroe, Cypress & Sugar Land. Fiber cement & vinyl. Storm repairs. Request a consultation.",
     path: "/services/siding-exterior",
   },
   intro: {

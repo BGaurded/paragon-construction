@@ -8,9 +8,9 @@ const config = {
   title: "Storm Damage Restoration in Greater Houston",
   subtitle: "Fast response, expert repairs, and full insurance claim assistance to restore your home after Texas storms.",
   seo: {
-    title: "Storm Damage Roof Repair Tomball TX | Paragon Partners Construction",
+    title: "Storm Damage Roof Repair Greater Houston TX | Paragon Partners Construction",
     description:
-      "Storm damage restoration & insurance claim support in Greater Houston. Emergency response for Spring, The Woodlands, Tomball & Huntsville. Free inspections.",
+      "Storm damage restoration & insurance claim support across Greater Houston. Emergency response for Spring, The Woodlands, Conroe, Cypress, Sugar Land, and surrounding communities. Free inspections.",
     path: "/services/storm-damage",
   },
   intro: {

@@ -10,7 +10,7 @@ const config = {
   seo: {
     title: "Residential Roofing Services Spring TX | Paragon Partners Construction",
     description:
-      "Premium residential roofing in Spring, The Woodlands, Tomball & Huntsville. GAF Master Elite certified. Architectural shingles, repairs & replacements. Free inspections.",
+      "Premium residential roofing across Greater Houston—Spring, The Woodlands, Conroe, Cypress & Sugar Land. GAF Master Elite certified. Architectural shingles, repairs & replacements. Free inspections.",
     path: "/services/residential-roofing",
   },
   intro: {

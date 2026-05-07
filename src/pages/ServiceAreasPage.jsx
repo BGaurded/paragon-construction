@@ -14,23 +14,37 @@ const AREAS = [
     city: "Spring",
     state: "TX",
     description:
-      "Trusted residential and commercial roofing experts serving the Spring community with premium installations and repairs.",
+      "Trusted residential and commercial roofing experts serving the Spring community with premium installations, storm-ready repairs, and meticulous clean-up.",
   },
   {
     city: "The Woodlands",
     state: "TX",
     description:
-      "Luxury roofing solutions for The Woodlands' finest homes and commercial properties.",
+      "Luxury roofing solutions for The Woodlands' finest homes and commercial properties—designed for curb appeal, longevity, and Texas weather.",
   },
   {
-    city: "Tomball",
+    city: "Conroe",
     state: "TX",
-    description: "Your local roofing partner in Tomball, delivering reliable service and exceptional craftsmanship.",
+    description:
+      "Full-service roofing for Conroe homeowners and businesses, from inspections and repairs to full replacements with premium materials.",
   },
   {
-    city: "Huntsville",
+    city: "Cypress",
     state: "TX",
-    description: "Professional roofing services in Huntsville with fast response times and quality workmanship.",
+    description:
+      "Dependable roofing and exterior protection for Cypress neighborhoods, with honest assessments and craftsmanship you can see from the curb.",
+  },
+  {
+    city: "Sugar Land",
+    state: "TX",
+    description:
+      "Upscale residential and light commercial roofing tailored to Sugar Land properties—refined details, strong warranties, and clear communication.",
+  },
+  {
+    city: "Greater Houston Area",
+    state: null,
+    description:
+      "Wherever you are around the metro, we bring the same GAF Master Elite standards, responsive service, and insurance-claim experience to every project.",
   },
 ];
 
@@ -38,8 +52,8 @@ export default function ServiceAreasPage() {
   return (
     <div className="min-h-screen bg-white">
       <PageSEO
-        title="Service Areas | Spring, The Woodlands, Tomball & Huntsville TX Roofing"
-        description="Paragon Partners Construction serves Greater Houston with premium roofing. Fast response times in Spring, The Woodlands, Tomball & Huntsville. Free inspections."
+        title="Service Areas | Spring, The Woodlands, Conroe, Cypress & Sugar Land TX Roofing"
+        description="Paragon Partners Construction serves the entire Greater Houston area—Spring, The Woodlands, Conroe, Cypress, Sugar Land, and communities throughout the metro. Free inspections."
         path="/service-areas"
         jsonLd={localBusinessSchema()}
       />
@@ -54,10 +68,13 @@ export default function ServiceAreasPage() {
               Proudly Serving Greater Houston
             </h1>
             <div className="w-16 h-px bg-[#C9A961] mx-auto mt-6 mb-8" />
+            <p className="text-[#2F5F6F] font-body max-w-3xl mx-auto leading-relaxed text-lg font-medium mb-4">
+              Paragon Partners Construction serves the entire Greater Houston area.
+            </p>
             <p className="text-[#2B2D2F]/65 font-body max-w-3xl mx-auto leading-relaxed text-lg">
-              Paragon Partners Construction proudly serves the Greater Houston area with fast response times and local
-              expertise. Our team knows the unique roofing challenges of Texas weather and delivers solutions built to
-              last.
+              We proudly serve Spring, The Woodlands, Conroe, Cypress, Sugar Land, and the Greater Houston Area with fast
+              response times and local expertise. Our team knows the unique roofing challenges of Texas weather and
+              delivers solutions built to last.
             </p>
           </motion.div>
         </div>
@@ -79,7 +96,7 @@ export default function ServiceAreasPage() {
               >
                 <MapPin className="w-7 h-7 text-[#C9A961] mb-4" aria-hidden />
                 <h2 className="font-heading text-2xl font-medium text-[#2B2D2F] mb-1">
-                  {area.city}, {area.state}
+                  {area.state ? `${area.city}, ${area.state}` : area.city}
                 </h2>
                 <p className="text-sm font-mono uppercase tracking-wider text-[#2F5F6F]/70 mb-4">Premium roofing</p>
                 <p className="text-[#2B2D2F]/70 font-body leading-relaxed">{area.description}</p>
@@ -94,7 +111,10 @@ export default function ServiceAreasPage() {
             className="text-center mt-16"
           >
             <Link to="/contact">
-              <Button data-magnetic className="bg-[#C9A961] text-[#2B2D2F] hover:bg-[#2F5F6F] hover:text-white font-semibold px-10 py-6 text-base transition-all duration-300 min-h-12">
+              <Button
+                data-magnetic
+                className="bg-[#C9A961] text-[#2B2D2F] hover:bg-[#2F5F6F] hover:text-white font-semibold px-10 py-6 text-base transition-all duration-300 min-h-12"
+              >
                 Schedule Your Free Inspection
               </Button>
             </Link>
