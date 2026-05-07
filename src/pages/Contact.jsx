@@ -109,8 +109,8 @@ export default function Contact() {
                       >
                         remington@paragonpartnersconstrction.com
                       </a>
-                      <a href="tel:+18632146310" className="text-[#2B2D2F]/80 font-body text-sm hover:text-[#2F5F6F] transition-colors">
-                        863-214-6310
+                      <a href="tel:+13468146310" className="text-[#2B2D2F]/80 font-body text-sm hover:text-[#2F5F6F] transition-colors">
+                        346-814-6310
                       </a>
                     </div>
                   </li>

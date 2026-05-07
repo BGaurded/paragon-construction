@@ -1,8 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { ShieldCheck, Gem, HeartHandshake, Sparkles, Phone, Mail, MapPin } from "lucide-react";
-import { Button } from "@/components/ui/button";
-import { Link } from "react-router-dom";
+import { ShieldCheck, Gem, HeartHandshake, Sparkles } from "lucide-react";
 import StickyHeader from "@/components/landing/StickyHeader";
 import Footer from "@/components/landing/Footer";
 import GoldenThread from "@/components/landing/GoldenThread";
@@ -244,45 +242,6 @@ export default function About() {
             With years of experience across Greater Houston, we combine regional know-how with white-glove service—so your
             project feels precise, professional, and worry-free from the first call to the final walkthrough.
           </p>
-        </div>
-      </section>
-
-      <section className="py-20 bg-white border-t border-[#e8e5de]" data-reveal>
-        <div className="max-w-4xl mx-auto px-4 text-center">
-          <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
-            <p className="font-mono text-xs tracking-[0.3em] text-[#C9A961] uppercase mb-4">Visit Us</p>
-            <h2 className="font-heading text-3xl font-light text-[#2B2D2F] mb-8 tracking-wide">Get In Touch</h2>
-            <div className="flex flex-col sm:flex-row items-center justify-center gap-8 mb-10 text-left sm:text-center">
-              <div className="flex items-center gap-3 text-[#2B2D2F]/70">
-                <MapPin className="w-5 h-5 text-[#C9A961] shrink-0" aria-hidden />
-                <span className="font-body text-sm">
-                  {SITE.address.streetAddress}, {SITE.address.addressLocality}, {SITE.address.addressRegion}{" "}
-                  {SITE.address.postalCode}
-                </span>
-              </div>
-              <div className="flex items-center gap-3 text-[#2B2D2F]/70">
-                <Phone className="w-5 h-5 text-[#C9A961] shrink-0" aria-hidden />
-                <a href={`tel:${SITE.phoneTel}`} className="font-body text-sm hover:text-[#2F5F6F] transition-colors">
-                  {SITE.phoneDisplay}
-                </a>
-              </div>
-              <div className="flex items-start gap-3 text-[#2B2D2F]/70">
-                <Mail className="w-5 h-5 text-[#C9A961] shrink-0 mt-0.5" aria-hidden />
-                <div className="flex flex-col gap-1 font-body text-sm">
-                  {SITE.emails.map((addr) => (
-                    <a key={addr} href={`mailto:${addr}`} className="hover:text-[#2F5F6F] transition-colors break-all">
-                      {addr}
-                    </a>
-                  ))}
-                </div>
-              </div>
-            </div>
-            <Link to="/contact">
-              <Button className="bg-[#C9A961] text-[#2B2D2F] hover:bg-[#2F5F6F] hover:text-white font-semibold px-10 py-6 text-base transition-all duration-300 min-h-12">
-                Schedule Your Free Inspection
-              </Button>
-            </Link>
-          </motion.div>
         </div>
       </section>
 

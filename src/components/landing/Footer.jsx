@@ -88,43 +88,49 @@ export default function Footer() {
             <h2 className="font-mono text-[11px] tracking-[0.22em] text-[#C9A961] uppercase mb-6">Contact</h2>
             <ul className="space-y-4">
               <li className="flex items-start gap-3">
-                <Phone className="w-4 h-4 text-[#C9A961] mt-0.5 shrink-0" aria-hidden />
-                <a
-                  href={`tel:${SITE.phoneTel}`}
-                  className="text-sm text-white/50 hover:text-white transition-colors font-body focus-visible:outline focus-visible:outline-2 focus-visible:outline-[#C9A961] rounded-sm"
-                >
-                  {SITE.phoneDisplay}
-                </a>
+                <Mail className="w-4 h-4 text-[#C9A961] mt-0.5 shrink-0" aria-hidden />
+                <div className="flex flex-col gap-1.5">
+                  <p className="text-[11px] font-mono tracking-[0.16em] uppercase text-white/35">Remington D&apos;Abbraccio</p>
+                  <a href="mailto:remington@paragonpartnersconstrction.com" className="text-sm text-white/50 hover:text-white transition-colors font-body focus-visible:outline focus-visible:outline-2 focus-visible:outline-[#C9A961] rounded-sm break-all">
+                    remington@paragonpartnersconstrction.com
+                  </a>
+                  <a href="tel:+13468146310" className="text-sm text-white/50 hover:text-white transition-colors font-body focus-visible:outline focus-visible:outline-2 focus-visible:outline-[#C9A961] rounded-sm">
+                    346-814-6310
+                  </a>
+                </div>
               </li>
               <li className="flex items-start gap-3">
                 <Mail className="w-4 h-4 text-[#C9A961] mt-0.5 shrink-0" aria-hidden />
                 <div className="flex flex-col gap-1.5">
-                  {SITE.emails.map((addr) => (
-                    <a
-                      key={addr}
-                      href={`mailto:${addr}`}
-                      className="text-sm text-white/50 hover:text-white transition-colors font-body focus-visible:outline focus-visible:outline-2 focus-visible:outline-[#C9A961] rounded-sm break-all"
-                    >
-                      {addr}
-                    </a>
-                  ))}
+                  <p className="text-[11px] font-mono tracking-[0.16em] uppercase text-white/35">Brian Gonzalez</p>
+                  <a href="mailto:brian@ppcconstruction.com" className="text-sm text-white/50 hover:text-white transition-colors font-body focus-visible:outline focus-visible:outline-2 focus-visible:outline-[#C9A961] rounded-sm break-all">
+                    brian@ppcconstruction.com
+                  </a>
+                  <a href="tel:+18322576336" className="text-sm text-white/50 hover:text-white transition-colors font-body focus-visible:outline focus-visible:outline-2 focus-visible:outline-[#C9A961] rounded-sm">
+                    832-257-6336
+                  </a>
                 </div>
+              </li>
+              <li className="flex items-start gap-3">
+                <Phone className="w-4 h-4 text-[#C9A961] mt-0.5 shrink-0" aria-hidden />
+                <span className="text-sm text-white/50 font-body">
+                  Office:{" "}
+                  <a href={`tel:${SITE.phoneTel}`} className="hover:text-white transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-[#C9A961] rounded-sm">
+                    {SITE.phoneDisplay}
+                  </a>
+                </span>
               </li>
               <li className="flex items-start gap-3">
                 <Clock className="w-4 h-4 text-[#C9A961] mt-0.5 shrink-0" aria-hidden />
                 <span className="text-sm text-white/50 font-body">
-                  Mon–Fri: 7AM–6PM
-                  <br />
-                  Sat: 8AM–2PM
+                  Hours: Mon-Fri: 7AM-6PM, Sat: 8AM-2PM
                 </span>
               </li>
               <li className="flex items-start gap-3">
                 <MapPin className="w-4 h-4 text-[#C9A961] mt-0.5 shrink-0" aria-hidden />
                 <span className="text-sm text-white/50 font-body">
-                  {SITE.address.streetAddress}
-                  <br />
-                  {SITE.address.addressLocality}, {SITE.address.addressRegion}{" "}
-                  <span className="font-heading tracking-[0.02em] text-white/70">{SITE.address.postalCode}</span>
+                  Address: 25420 Kuykendahl Rd, Ste B100, Tomball, TX{" "}
+                  <span className="font-heading tracking-[0.02em] text-white/70">77375</span>
                 </span>
               </li>
             </ul>
@@ -138,10 +144,7 @@ export default function Footer() {
           <div className="flex flex-wrap items-center justify-center gap-3 sm:gap-4">
             <span className="text-xs text-white/30 font-mono tracking-wider uppercase">Licensed & Insured</span>
             <span className="w-px h-3 bg-white/10 hidden sm:block" aria-hidden />
-            <div className="flex items-center gap-2">
-              <span className="text-xs text-white/30 font-mono tracking-wider uppercase">GAF Certified</span>
-              <GafMasterEliteBadge size="sm" />
-            </div>
+            <GafMasterEliteBadge size="sm" />
           </div>
         </div>
       </div>
