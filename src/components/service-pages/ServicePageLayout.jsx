@@ -56,7 +56,7 @@ export default function ServicePageLayout({ config }) {
             <h1 className="font-heading text-4xl sm:text-5xl md:text-6xl font-light text-white leading-[1.05] tracking-[0.015em] mb-4 drop-shadow-[0_8px_30px_rgba(0,0,0,0.35)]">
               {title}
             </h1>
-            <p className="text-white/88 font-body text-lg max-w-2xl mx-auto mb-8 [text-shadow:0_2px_14px_rgba(0,0,0,0.5)]">{subtitle}</p>
+            <p className="text-white font-body text-lg max-w-2xl mx-auto mb-8 [text-shadow:0_2px_16px_rgba(0,0,0,0.58)]">{subtitle}</p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <Button
                 data-magnetic

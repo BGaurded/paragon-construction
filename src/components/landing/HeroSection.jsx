@@ -86,13 +86,13 @@ export default function HeroSection() {
 
       <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 text-center pt-20">
         <div ref={badgeRef}>
-          <p className="font-mono text-xs sm:text-sm tracking-[0.3em] text-[#C9A961] uppercase mb-6 flex flex-wrap items-center justify-center gap-x-3 gap-y-2">
+          <p className="font-mono text-xs sm:text-sm tracking-[0.3em] text-white/95 uppercase mb-6 flex flex-wrap items-center justify-center gap-x-3 gap-y-2 [text-shadow:0_2px_12px_rgba(0,0,0,0.45)]">
             <span>Licensed</span>
-            <span aria-hidden className="text-white/40">
+            <span aria-hidden className="text-white/70">
               &bull;
             </span>
             <span>Insured</span>
-            <span aria-hidden className="text-white/40">
+            <span aria-hidden className="text-white/70">
               &bull;
             </span>
             <span className="inline-flex items-center gap-2">
