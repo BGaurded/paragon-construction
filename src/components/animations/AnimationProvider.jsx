@@ -14,7 +14,9 @@ export default function AnimationProvider({ children }) {
     () => {
       const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
       if (reduceMotion) return;
+      const isMobile = window.matchMedia("(max-width: 767px)").matches;
       const isTouch = window.matchMedia("(pointer: coarse)").matches;
+      if (isMobile) return;
 
       const cleanups = [];
       const ctx = gsap.context(() => {

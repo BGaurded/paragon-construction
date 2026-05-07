@@ -23,6 +23,8 @@ export default function HeroSection() {
     () => {
       const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
       if (reduceMotion) return;
+      const isMobile = window.matchMedia("(max-width: 767px)").matches;
+      if (isMobile) return;
 
       const tl = gsap.timeline({ defaults: { ease: "power3.out" } });
       tl.fromTo(
@@ -95,7 +97,7 @@ export default function HeroSection() {
             <span aria-hidden className="text-white/70">
               &bull;
             </span>
-            <span className="inline-flex items-center gap-2 text-[#C9A961]">
+            <span className="inline-flex items-center gap-2 text-white">
               <span>GAF Certified</span>
               <GafMasterEliteBadge size="sm" />
             </span>
